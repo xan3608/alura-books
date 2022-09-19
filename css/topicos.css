@@ -1,0 +1,28 @@
+.topicos {
+    padding: 1rem 0.5rem;
+    margin-top: 2rem;
+}
+
+.topicos__titulo {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.topicos__item{
+    box-sizing: border-box;
+    margin: 2rem 0.5rem;
+}
+
+.topicos__link {
+    padding: 1rem;
+}
