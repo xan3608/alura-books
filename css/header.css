@@ -24,25 +24,29 @@
     padding: 1rem;
 }
 
-.container__botao {
-    display: none;
-}
-
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
+    background-color: var(--cor-de-fundo-cabecalho);
+    width: 65vw;
 }
 
 .container__botao:checked~.lista-menu {
     display: block;
 }
 
+.container__botao:checked+label {
+    background: var(--cor-azul-degrade);
+}
+
+.container__botao:checked+label>.cabecalho__menu-hamburguer {
+    background-image: url("../img/menu_black.png");
+}
+
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1rem;
-    background-color: var(--cor-de-fundo-cabecalho);
-    width: 65vw;
     box-sizing: border-box;
 }
 
@@ -61,4 +65,100 @@
     text-transform: uppercase;
     font-weight: 400;
     line-height: 24px;
+}
+
+.container__titulo,
+.opcoes, .container__texto, .container__botao {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-logotipo), sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 1rem;
+    }
+
+    .container__titulo {
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 1rem 1rem;
+        cursor: pointer;
+    }
+
+    .opcoes__item,
+    .opcoes_link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    .icone__favorito, .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .cabecalho {
+        padding: 0 3rem;
+    }
+
+    .container__logos>* {
+        padding: 0 0.5rem;
+    }
+
+    .lista-menu {
+        width: auto;
+        top: 88%;
+    }
+
+    .container__botao:checked+label>.opcoes__item {
+        background: var(--cor-azul-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover {
+        background: var(--cor-azul-degrade);
+    }
+
+    .lista-menu__item:hover .lista-menu__link {
+        color: var(--branco);
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-do-texto-preto);
+    }
+
+    .container__texto {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .container__opcoes {
+        margin-left: 3rem;
+        margin-right: auto;
+    }
 }

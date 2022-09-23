@@ -26,3 +26,26 @@
 .topicos__link {
     padding: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    .topicos__link {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .topicos__link:hover {
+        color: var(--cor-do-texto-laranja);
+        background-color: var(--branco);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3rem 30vh;
+    }
+}

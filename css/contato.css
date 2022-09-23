@@ -41,3 +41,29 @@
     background-size: 1.3rem;
     background-position: 0.4rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        align-items: center;
+    }
+
+    .container__contato, .contato__email {
+        margin: 0 4rem;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .contato__email {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3rem 30vh;
+    }
+}

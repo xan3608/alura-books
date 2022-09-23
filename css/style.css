@@ -7,12 +7,16 @@
 
 :root {
     --fonte-padrao: "Poppins";
+    --fonte-logotipo: "Josefin Sans";
     --branco: #FFFFFF;
     --cor-azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --cor-de-fundo: #EBECEE;
     --cor-de-fundo-cabecalho: #FFFFFF;
     --cor-do-texto-laranja: #EB9B00;
     --cor-do-texto-azul: #002F52;
+    --cor-do-texto-cinza: #858585;
+    --cor-do-texto-vinza-escuro: #474646;
+    --cor-do-texto-preto: #000000;
 }
 
 body {
